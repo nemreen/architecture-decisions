@@ -1,38 +1,36 @@
 # Architecture Decisions
 
-A living showcase of my architecture work — ADRs, diagrams, reference
-architectures, and articles — published one piece at a time.
-
-Each ADR documents the context, options considered, decision, and
-consequences, including what I'd reconsider today. Client-specific details
-are generalized. The reasoning is real.
+A living showcase of my architecture work — published one project at a time.
+Each project holds its own ADRs and diagrams. Client-specific details are
+generalized. The reasoning is real.
 
 **Ahmed Nemreen** · [nemreen.info](https://nemreen.info)
 
-## What's here
+## Projects
 
-| Path | Purpose |
-|------|---------|
-| [`adr/`](adr/) | Decision records (English) |
-| [`adr/ar/`](adr/ar/) | Arabic versions (same numbering) |
-| [`diagrams/`](diagrams/) | Mermaid sources and exported images |
-| [`reference-architectures/`](reference-architectures/) | End-to-end reference architectures |
-| [`articles/`](articles/) | Long-form pieces or links to LinkedIn / nemreen.info |
+| Project | Focus | Status |
+|---------|--------|--------|
+| [CMS: Umbraco → Directus](projects/cms-umbraco-to-directus/) | Platform CMS selection | Draft ADR |
+| [DGA UI Angular](projects/dga-ui-angular/) | DGA UI (Angular) | Coming soon |
+| [Hisn](projects/hisn/) | Hisn | Coming soon |
+| [Loopwell](projects/loopwell/) | Loopwell | Coming soon |
 
-## Index
+## Layout
 
-| # | Decision | Status | Domain |
-|---|----------|--------|--------|
-| [001](adr/001-cms-umbraco-to-directus.md) | CMS selection: Umbraco to Directus | Draft | Platform |
+```
+projects/<slug>/
+  README.md
+  adr/           # decisions for this project (NNN-short-slug.md)
+  adr/ar/        # Arabic twins (same numbering)
+  arc42/         # full architecture documentation (12 sections)
+  diagrams/      # Mermaid sources and exports
+```
 
-## Format
+## Templates
 
-Each ADR follows: Context → Options → Decision → Consequences → Links.
+| Template | Path |
+|----------|------|
+| ADR | [`templates/adr.md`](templates/adr.md) |
+| arc42 | [`templates/arc42/`](templates/arc42/) |
 
-New records start from [`adr/000-template.md`](adr/000-template.md).
-
-### Naming
-
-- English: `adr/NNN-short-slug.md` (e.g. `001-cms-umbraco-to-directus.md`)
-- Arabic twin: `adr/ar/NNN-short-slug.md` (same number and slug)
-- Diagrams: `diagrams/NNN-short-name.mmd` (+ optional `.png` export)
+ADR numbering is per project. New projects can copy `templates/arc42` into `projects/<slug>/arc42`.

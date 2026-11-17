@@ -22,5 +22,5 @@ Content TBD.
 
 ## Links
 
-- Diagrams: TBD
+- Diagrams: [`../diagrams/`](../diagrams/)
 - Arabic version: TBD

@@ -27,5 +27,4 @@ What was chosen and why.
 ## Links
 
 - Diagrams: [`../diagrams/`](../diagrams/)
-- Related articles: [`../articles/`](../articles/)
 - Arabic version: [`ar/NNN-slug.md`](ar/NNN-slug.md) (if available)
